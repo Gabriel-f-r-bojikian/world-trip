@@ -1,7 +1,12 @@
+<h1 align="center">
+	<img alt="World-trip" title="World-trip" src="./src/public/../../public/Logo.svg" />
+</h1>
+
+
 # World trip
 
 ![Badge](https://img.shields.io/badge/license-MIT-informational?style=for-the-bade)
-![Badge](https://img.shields.io/badge/Node.JS-v14.16.0-339933?logo=node.js) ![Badge](https://img.shields.io/badge/React-v17.0.1-61dafb?logo=react) ![Badge](https://img.shields.io/badge/Next.js-v10.0.7-000000?logo=Next.Js) ![Badge](https://img.shields.io/badge/TypeScript-v4.2.2-3178c6?logo=typescript) ![Badge](https://img.shields.io/badge/ChakraUI-v1.32.8-319795?logo=ChakraUI) ![Badge](https://img.shields.io/badge/status-in_development-red)
+![Badge](https://img.shields.io/badge/Node.JS-v14.16.0-339933?logo=node.js) ![Badge](https://img.shields.io/badge/React-v17.0.2-61dafb?logo=react) ![Badge](https://img.shields.io/badge/Next.js-v10.0.7-000000?logo=Next.Js) ![Badge](https://img.shields.io/badge/TypeScript-v4.3.2-3178c6?logo=typescript) ![Badge](https://img.shields.io/badge/ChakraUI-v1.32.8-319795?logo=ChakraUI) ![Badge](https://img.shields.io/badge/status-in_development-red)
 
 ## About
 This repository contains the fourth challenge task to be completed for Rocketseat's Ignite Bootcamp, class 01. 
