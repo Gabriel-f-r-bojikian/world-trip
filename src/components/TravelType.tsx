@@ -6,7 +6,6 @@ interface travelProps {
 }
 
 export default function TravelType(props: travelProps) {
-    console.log(props);
     return (
         <Flex
             direction="column"
