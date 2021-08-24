@@ -1,6 +1,8 @@
 import { Flex, Divider, Text } from '@chakra-ui/react';
+
 import Banner from '../components/Banner';
 import Header from '../components/Header';
+import Slider from '../components/Slider';
 
 export default function Home() {
   return (
@@ -31,6 +33,9 @@ export default function Home() {
         Vamos nessa?<br />
         Então escolha seu continente
       </Text>
+
+      <Slider />
+
     </Flex>
   )
 }
