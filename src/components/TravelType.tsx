@@ -9,6 +9,8 @@ export default function TravelType(props: travelProps) {
     return (
         <Flex
             direction="column"
+            justifyContent="center"
+            align="center"
         >
             <Flex 
                 as="img"
@@ -20,7 +22,7 @@ export default function TravelType(props: travelProps) {
             
             <Text
                 font="Poppins"
-                fontSize="2xl"
+                fontSize="1rem"
                 fontWeight="600"
             >
                 {props.travelText}

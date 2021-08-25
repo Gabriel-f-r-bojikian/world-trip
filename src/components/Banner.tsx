@@ -45,9 +45,11 @@ export default function Banner () {
 
             <Flex
                 w="100%"
-                maxWidth="1080px"
+                maxWidth="1240px"
                 maxHeight="335px"
                 marginTop="5rem"
+                marginLeft="140px"
+                marginRight="140px"
                 justifyContent="space-between"
                 alignItems="center"
                 alignSelf="center"
