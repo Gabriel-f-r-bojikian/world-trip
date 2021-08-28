@@ -18,7 +18,7 @@ export default function Slider() {
     return (
         <Flex
             h="450px"
-            w="100%"
+            w={{base: "100vw", lg: "100%"}}
             maxWidth="1240px"
             align="center"
             justify="center"

@@ -1,37 +1,47 @@
-import { Flex, Text } from '@chakra-ui/react';
+import { Flex, List } from '@chakra-ui/react';
+import { createBreakpoints } from '@chakra-ui/theme-tools';
+
 import TravelType from './TravelType';
+import TravelBullet from './TravelBullet';
+
+const breakpoints = createBreakpoints({
+    sm: "30em",
+    md: null,
+    lg: null,
+    xl: "80em",
+  })
 
 export default function Banner () {
     return (
         <>
             <Flex
-                w="100%"
+                w="100vw"
                 maxWidth="1440px"
                 maxHeight="335px"
                 backgroundImage="/HomeAssets/Background.png"
                 justifyContent="center"
                 alignItems="center"
                 alignSelf="center"
+                padding={{base: "16px 28px", lg: "5rem 8.75rem"}}
             >
             <Flex
                 flexDirection="column"
                 color="white"
-
             >
                 <Flex
                     as="p"
-                    fontWeight="bold"
-                    fontSize="36"
+                    fontWeight="700"
+                    fontSize={{base: "20px", lg:"36"}}
                 >
                     5 Continentes, <br/> infinitas possibilidades.
                 </Flex>
 
                 <Flex
                     as="p"
-                    fontSize="20"
-                    fontWeight="light"
+                    fontSize={{base: "14px", lg:"20"}}
+                    fontWeight="400"
                 >
-                    Chegou a hora de tirar do papel a viagem que você <br /> sempre sonhou
+                    Chegou a hora de tirar do papel a viagem que você sempre sonhou
                 </Flex>
             </Flex>
 
@@ -40,6 +50,7 @@ export default function Banner () {
                 src="/HomeAssets/Airplane.svg"
                 paddingTop="6rem"
                 marginLeft="12rem"
+                display={{ base: "none", lg: "inline"}}
             />
             </Flex>
 
@@ -53,6 +64,7 @@ export default function Banner () {
                 justifyContent="space-between"
                 alignItems="center"
                 alignSelf="center"
+                display={{base: "none", lg: "flex"}}
             >
                 <TravelType 
                     travelImage="/HomeAssets/Cocktail.svg" 
@@ -80,6 +92,21 @@ export default function Banner () {
                 />
                 
             </Flex>
+
+            <List
+                display={{base: "flex", lg: "none"}}
+                margin="0 50px"
+                flexWrap="wrap"
+                alignContent="center"
+                justifyContent="space-between"
+            >
+                <TravelBullet travelText="vida noturna" />
+                <TravelBullet travelText="praia" />
+                <TravelBullet travelText="moderno" />
+                <TravelBullet travelText="clássico" />
+                <TravelBullet travelText="e mais..." />
+            </List>
+            
         </>
     )
 }
