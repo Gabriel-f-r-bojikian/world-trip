@@ -1,8 +1,8 @@
 import { Flex, Divider, Text } from '@chakra-ui/react';
 import { createBreakpoints } from '@chakra-ui/theme-tools';
 
-import Banner from '../components/Banner';
-import Header from '../components/Header';
+import Banner from '../components/HomepageBanner';
+import Header from '../components/HomepageHeader';
 import Slider from '../components/Slider';
 
 
