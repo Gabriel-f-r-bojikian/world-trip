@@ -1,4 +1,4 @@
-import { Flex, List } from '@chakra-ui/react';
+import { Flex, List, theme } from '@chakra-ui/react';
 import { createBreakpoints } from '@chakra-ui/theme-tools';
 
 import TravelType from './TravelType';
