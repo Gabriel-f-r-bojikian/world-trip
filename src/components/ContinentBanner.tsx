@@ -32,7 +32,7 @@ export default function ContinentBanner () {
             <Flex
                 position="absolute"
                 top="75%"
-                left="15%"
+                left="18%"
                 transform="translate(-50%, -50%)"
             >
                 <Text
