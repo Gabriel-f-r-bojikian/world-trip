@@ -61,7 +61,7 @@ export default function Banner () {
                 marginTop="5rem"
                 marginLeft="140px"
                 marginRight="140px"
-                justifyContent="space-between"
+                justifyContent="space-around"
                 alignItems="center"
                 alignSelf="center"
                 display={{base: "none", lg: "flex"}}

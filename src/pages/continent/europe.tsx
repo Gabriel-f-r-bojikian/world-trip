@@ -2,7 +2,8 @@ import { Flex, Text } from '@chakra-ui/react';
 
 import ContinentHeader from '../../components/ContinentHeader';
 import ContinentBanner from '../../components/ContinentBanner';
-import ContinentDescriptionBit from '../../components/ContinentDescriptionBit'
+import ContinentDescriptionBit from '../../components/ContinentDescriptionBit';
+import CitiesBox from '../../components/CitiesBox';
 
 export default function Europe() {
     return(
@@ -56,6 +57,8 @@ export default function Europe() {
 
                 </Flex>
             </Flex>
+            
+            <CitiesBox />
         </Flex>
     )
 }
