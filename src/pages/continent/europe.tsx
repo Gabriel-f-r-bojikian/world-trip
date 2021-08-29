@@ -2,6 +2,7 @@ import { Flex, Text } from '@chakra-ui/react';
 
 import ContinentHeader from '../../components/ContinentHeader';
 import ContinentBanner from '../../components/ContinentBanner';
+import ContinentDescriptionBit from '../../components/ContinentDescriptionBit'
 
 export default function Europe() {
     return(
@@ -38,65 +39,20 @@ export default function Europe() {
                     align="center"
                     justifyContent="space-between"
                 >
-                    <Flex
-                        flexDirection="column"
-                        align="center"
-                        justifyContent="center"
-                        margin="0 1.5rem"
-                    >
-                        <Text
-                            fontWeight="700"
-                            fontSize="3rem"
-                            color="var(--highlight)"
-                        >
-                            50
-                        </Text>
-                        <Text
-                            fontWeight="600"
-                        >
-                            países
-                        </Text>
-                    </Flex>
+                    <ContinentDescriptionBit 
+                        highlightInfo="50"
+                        subtitleInfo="países"
+                    />
+                    
+                    <ContinentDescriptionBit 
+                        highlightInfo="60"
+                        subtitleInfo="línguas"
+                    />
 
-                    <Flex
-                        flexDirection="column"
-                        align="center"
-                        justifyContent="center"
-                        margin="0 1.5rem"
-                    >
-                        <Text
-                            fontWeight="700"
-                            fontSize="3rem"
-                            color="var(--highlight)"
-                        >
-                            60
-                        </Text>
-                        <Text
-                            fontWeight="600"
-                        >
-                            línguas
-                        </Text>
-                    </Flex>
-
-                    <Flex
-                        flexDirection="column"
-                        align="center"
-                        justifyContent="center"
-                        margin="0 1.5rem"
-                    >
-                        <Text
-                            fontWeight="700"
-                            fontSize="3rem"
-                            color="var(--highlight)"
-                        >
-                            27
-                        </Text>
-                        <Text
-                            fontWeight="600"
-                        >
-                            cidades +100
-                        </Text>
-                    </Flex>
+                    <ContinentDescriptionBit 
+                        highlightInfo="27"
+                        subtitleInfo="cidades +100"
+                    />
 
                 </Flex>
             </Flex>
