@@ -26,10 +26,11 @@ The challenge consists in creating a __traveling app__ that contains travel tips
 # Status
 This project is a work in progress. 
 # Features
-- [ ] Web page
-- [ ] Mobile page
-- [ ] Responsive UI
-- [ ] API data consumption
+- [x] Web page
+- [x] Mobile page
+- [x] Responsive UI
+- [x] API data consumption
+- [ ] All five continent pages
 # How to install and run this application
 ## Prerequisites
 To run this code you will need the latest versions of [Node.js](https://nodejs.org/en/) and [Yarn](https://yarnpkg.com/) installed on your machine.
