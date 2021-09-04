@@ -21,6 +21,7 @@ export default function CitiesBox() {
             justify="center"
             align="center"
             flexDirection="column"
+            marginBottom="5rem"
         >
             <Text
                 fontWeight="500"
