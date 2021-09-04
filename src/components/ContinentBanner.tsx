@@ -22,17 +22,17 @@ export default function ContinentBanner () {
             align="center"
         >
             <Image
-                src="/DestinationPictures/BigBen.jpg"
+                src="/DestinationPictures/Europe/BigBen.jpg"
                 objectFit="cover"
                 w="100%"
-                h="500px"
+                h={{base: "150px", lg: "500px"}}
                 filter="brightness(0.75)"
             />
 
             <Flex
                 position="absolute"
-                top="75%"
-                left="18%"
+                top={{ base: "50%", lg: "75%"}}
+                left={{ base: "50%", lg: "18%"}}
                 transform="translate(-50%, -50%)"
             >
                 <Text

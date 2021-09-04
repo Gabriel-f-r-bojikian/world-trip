@@ -1,8 +1,19 @@
 import { Flex, Text } from '@chakra-ui/react';
+import { useEffect, useState } from 'react';
 
 import CityCard from './CityCard';
 
 export default function CitiesBox() {
+
+    const [cities, setCities] = useState([]);
+    
+    useEffect(() => {
+        fetch('http://localhost:3000/api/europe')
+        .then( response => response.json())
+        .then( data => setCities(data))
+        .catch( error => console.log(error))
+    }, []);
+
     return(
         <Flex
             w="100%"
@@ -25,11 +36,14 @@ export default function CitiesBox() {
                 flexWrap="wrap"
                 justifyContent="space-around"
             >
-                <CityCard name="Londres" country="Reino Unido" image="/DestinationPictures/London.jpg"/>
-                <CityCard name="Paris" country="França"/>
-                <CityCard name="Roma" country="Itália"/>
-                <CityCard name="Praga" country="República Tcheca"/>
-                <CityCard name="Amsterdã" country="Holanda"/>
+                {cities.map(city => {
+                    return <CityCard 
+                        name={city.name} 
+                        country={city.country} 
+                        flag={`https://www.countryflags.io/` + city.flag + `/flat/64.png`} 
+                        image={city.image}
+                    />
+                })}
                 
             </Flex>
 

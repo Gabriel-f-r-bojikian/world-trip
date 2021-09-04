@@ -56,10 +56,11 @@ export default function CityCard(props: CityCardProps) {
 
                 <Image 
                     src={props.flag}
-                    h="30px"
-                    w="30px"
+                    h="40x"
+                    w="40px"
                     border="1px"
                     borderRadius="50%"
+                    objectFit="none"
                 />
             </Flex>
 

@@ -15,7 +15,7 @@ export default function ContinentDescriptionBit(props: ContinentDescriptionBitPr
         >
             <Text
                 fontWeight="700"
-                fontSize="3rem"
+                fontSize={{base: "2rem", lg: "3rem"}}
                 color="var(--highlight)"
             >
                 {props.highlightInfo}
